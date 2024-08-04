@@ -49,13 +49,13 @@ export default function Home() {
         <Grid id="about" />
         <Projects id="projects" />
         <Approach id="approach" />
-        <Footer id="contect" />
+        <Footer id="contact" />
         <FloatingNav
           navItems={[
             { name: "About", link: "#about" },
             { name: "Projects", link: "#projects" },
             { name: "Approach", link: "#approach" },
-            { name: "Contect", link: "#contect" },
+            { name: "Contact", link: "#contact" },
           ]}
         />
       </main>
