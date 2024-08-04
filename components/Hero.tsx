@@ -1,10 +1,9 @@
-import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa6";
 import { BoxBackground } from "@/components/ui/BoxBackground";
-import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
+import TypewriterEffectSmooth from "./ui/TypewriterEffect";
 
 const words = [
   {
@@ -39,7 +38,7 @@ function Hero({ id }: { id: string }) {
           Innovative Designs with Web Technologies.
         </h2>
         <TextGenerateEffect
-          duration={1}
+          duration={0.5}
           words="Turning Visions into Stunning Realities"
         />
         <h2 className="">

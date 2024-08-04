@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import Button from "./Button";
 
 export const FloatingNav = ({
   navItems,
@@ -56,7 +55,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[599000] py-2 px-2 md:px-4  items-center justify-center space-x-2 md:space-x-4",
+          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[599000] py-2 px-2 md:px-4  items-center justify-center pl-4 md:pl-6 space-x-2 md:space-x-4",
           className
         )}
       >
@@ -71,9 +70,9 @@ export const FloatingNav = ({
             <span className="block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <Button size="sm" border="rounded-full">
+        {/* <Button size="sm" border="rounded-full">
           Contact
-        </Button>
+        </Button> */}
       </motion.div>
     </AnimatePresence>
   );
