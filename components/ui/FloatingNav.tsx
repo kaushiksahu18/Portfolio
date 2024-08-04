@@ -70,7 +70,7 @@ export const FloatingNav = ({
             >
               <span className="block text-sm">{navItem.name}</span>
             </Link>
-            {idx !== item.length-1 && <div className="z-[999] h-6 w-[1px] bg-zinc-800"></div>}
+            {idx !== item.length-1 && <div key={idx} className="z-[999] h-6 w-[1px] bg-zinc-800"></div>}
           </>
         ))}
         {/* <Button size="sm" border="rounded-full">
