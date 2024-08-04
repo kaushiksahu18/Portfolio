@@ -7,17 +7,10 @@ import TypewriterEffectSmooth from "./ui/TypewriterEffect";
 
 const words = [
   {
-    text: "Hi, I'm a ",
+    text: "Hi, I'm ",
   },
   {
-    text: "Web Developer.",
-    className: "text-red-500 dark:text-red-500",
-  },
-  {
-    text : "based in "
-  },
-  {
-    text: "India.",
+    text: "Kaushik Sahu, a Web Developer.",
     className: "text-red-500 dark:text-red-500",
   },
 ];
@@ -33,7 +26,7 @@ function Hero({ id }: { id: string }) {
         <Spotlight fill="crimson" className="left-[20%]" />
         <Spotlight fill="crimson" className="left-[80%] md:left-[60%]" />
       </div>
-      <div className="z-[10] pr-16 md:pr-32 lg:pr-[30%] overflow-x-hidden">
+      <div className="z-[10] overflow-x-hidden pr-16 md:pr-32 lg:pr-[30%]">
         <h2 className="text-start text-xs font-bold uppercase text-white md:text-sm">
           Innovative Designs with Web Technologies.
         </h2>
@@ -42,7 +35,10 @@ function Hero({ id }: { id: string }) {
           words="Turning Visions into Stunning Realities"
         />
         <h2 className="">
-          <TypewriterEffectSmooth words={words} className="text-start text-sm font-bold uppercase md:text-lg"/>
+          <TypewriterEffectSmooth
+            words={words}
+            className="text-wrap text-start text-sm font-bold uppercase md:text-lg"
+          />
         </h2>
       </div>
       <a href="mailto:kaushiksahu18.dev@gmail.com">

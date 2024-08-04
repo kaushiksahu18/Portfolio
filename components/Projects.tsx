@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export default function Projects({ id }: { id: string }) {
   const tabs: Tab[] = [
     {
-      title: "UI clone",
+      title: "Project01",
       value: "UI clone",
       content: (
         <SkeletonTab
@@ -16,7 +16,7 @@ export default function Projects({ id }: { id: string }) {
       ),
     },
     {
-      title: "Password Generator",
+      title: "Project02",
       value: "Password Generator",
       content: (
         <SkeletonTab
@@ -28,7 +28,7 @@ export default function Projects({ id }: { id: string }) {
       ),
     },
     {
-      title: "Todo App",
+      title: "Project03",
       value: "Todo App",
       content: (
         <SkeletonTab
@@ -39,7 +39,7 @@ export default function Projects({ id }: { id: string }) {
       ),
     },
     {
-      title: "Gaming webapp",
+      title: "Project04",
       value: "Gaming webapp",
       content: (
         <SkeletonTab
@@ -86,7 +86,7 @@ export const SkeletonTab = ({
       {" "}
       <div
         className={cn(
-          `relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br from-red-500 to-red-800 p-10 text-xl font-bold text-white md:text-4xl`,
+          `relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br from-red-500 to-red-800 p-10 text-xl font-bold text-white md:text-4xl mt-12`,
           className,
         )}
       >
