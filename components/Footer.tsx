@@ -1,5 +1,4 @@
 import Button from "@/components/ui/Button";
-import {FlipWords} from "@/components/ui/FlipWord"
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -30,7 +29,7 @@ function Footer({ id = "footer" }: { id?: string }) {
     >
       <h2 className="md:x-28 text-center text-4xl font-bold text-white md:text-5xl lg:px-32 lg:text-6xl">
         Ready to take <span className="text-red-500">your</span> digital
-        presence to the <FlipWords words={["next-level?","new-heights?"]} duration={6000}/>
+        presence to the next level?
       </h2>
       <a href="mailto:kaushiksahu18.dev@gmail.com" className="z-[999]">
         <Button icon={<FaLocationArrow />}>Let&apos;s get in touch</Button>

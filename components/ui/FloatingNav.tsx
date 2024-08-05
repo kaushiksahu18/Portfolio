@@ -60,7 +60,7 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number,item) => (
-          <>
+          <React.Fragment key={navItem.link}>
             <Link
               key={`link=${idx}`}
               href={navItem.link}
@@ -70,8 +70,8 @@ export const FloatingNav = ({
             >
               <span className="block text-sm">{navItem.name}</span>
             </Link>
-            {idx !== item.length-1 && <div key={idx} className="z-[999] h-6 w-[1px] bg-zinc-800"></div>}
-          </>
+            {idx !== item.length-1 && <div key={`devider-${idx}`} className="z-[999] h-6 w-[1px] bg-zinc-800"></div>}
+          </React.Fragment>
         ))}
         {/* <Button size="sm" border="rounded-full">
           Contact

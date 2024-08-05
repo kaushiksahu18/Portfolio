@@ -31,7 +31,7 @@ export default function Home() {
     }, 6269); // Adjust the time as needed
 
     return () => clearTimeout(timer); // Cleanup the timer on unmount
-  }, []);
+  },[loading]);
 
   if (loading) {
     return (
