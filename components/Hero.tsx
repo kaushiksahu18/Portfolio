@@ -43,7 +43,7 @@ function Hero({ id }: { id: string }) {
       </div>
       <a href="mailto:kaushiksahu18.dev@gmail.com">
         <Button className="mt-12" icon={<FaLocationArrow />}>
-          Contect Now
+          Contact Now
         </Button>
       </a>
       <BoxBackground className="z-[-9999] overflow-x-hidden" />
